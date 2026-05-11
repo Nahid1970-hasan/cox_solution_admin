@@ -2,7 +2,10 @@
  * Frontend env – all API calls that connect to the Django backend.
  * Set VITE_API_BASE_URL in .env (see .env.example). Vite only exposes VITE_* to the client.
  */
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000'
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL 
+console.log("------------------------------------")
+console.log('API_BASE_URL:', API_BASE_URL)
+console.log("------------------------------------")
 
 /**
  * Build full backend URL for an API path.
